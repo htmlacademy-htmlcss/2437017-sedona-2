@@ -2,6 +2,7 @@
 
 * Студент: [Kirill Alexseev](https://up.htmlacademy.ru/htmlcss-individual/2/user/2437017).
 * Наставник: [Станислав Михайлов](https://htmlacademy.ru/profile/id139638).
+* Сайт: [Седона](https://kirill-alekseev96.github.io/2437017-sedona-2/).
 
 ---
 
