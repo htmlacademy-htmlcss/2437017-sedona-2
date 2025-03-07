@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: "PT Sans";
+    background-color: #F2F2F2;
+    color: #333;
+}
+
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 70px;
+  width: 1200px;
+  background: #FFF;
+  color: #000;
+}
+
+.navigation-logo-link {
+  margin-right: 30px;
+}
+
+.navigation-list {
+  display: flex;
+  flex: wrap;
+  max-width: 450px;
+  list-style-type: none;
+}
+
+
+.navigation-additional {
+  margin-left: auto;
+  max-width: 350px;
+  align-items: center;
+}
+
+.navigation-link {
+  position:relative;
+  display: block;
+  padding: 20px 17px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #333;
+}
+
+.navigation-icon-button {
+  font-size: 10px;
+  position: absolute;
+}
+
+/*section advantages*/
