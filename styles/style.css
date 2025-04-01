@@ -292,6 +292,7 @@ body {
 .advantages-item {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -301,6 +302,11 @@ body {
 
  .advantages-container {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-background {
+  background-color: #82B3D3;
 }
 
 .advantages-container-wrap {
@@ -310,27 +316,30 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   text-align: center;
 }
 
 .advantages-places {
-  padding: 102px 85px;
-  background-color: #82B3D3;
+  max-width: 230px;
+  margin: 102px 85px;
   color: #FFFFFF;
 }
 
 .advantages-pluses {
-  padding: 113px 85px;
+  max-width: 230px;
+  margin: 113px 85px;
 }
 
-.advantages-pluses:nth-child(2n+1) {
+.advantages-background-wrap:nth-child(2n+1) {
   background-color: rgba(131, 179, 211, 0.12);
 }
-.advantages-pluses:nth-child(2) {
+.advantages-background-wrap:nth-child(2) {
   background-color: rgba(131, 179, 211, 0.20);
 }
 
 .advantages-availability {
+  justify-content: flex-start;
   padding: 80px 85px;
 }
 
@@ -357,6 +366,10 @@ body {
   margin-top: 30px;
 }
 
+.advantages-image {
+  height: auto;
+}
+
 .advantages-text {
   color: #333333;
   font-size: 18px;
@@ -372,9 +385,9 @@ body {
 
 .advantages-pluses .advantages-text:before {
   position: absolute;
-  top: 200px;
-  left: 170px;
-  right: 170px;
+  top: 86px;
+  left: 85px;
+  right: 85px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.30);
   content: "";
@@ -382,9 +395,9 @@ body {
 
 .advantages-places .advantages-text:before {
   position: absolute;
-  top: 50%;
-  left: 170px;
-  right: 170px;
+  top: 86px;
+  left: 85px;
+  right: 85px;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.30);
   content: "";
@@ -458,6 +471,7 @@ body {
 
 .subscribe-field-input {
   width: 100%;
+  height: 100%;
   padding: 20px;
   border: none;
   border-radius: 4px 0 0 4px;
@@ -519,6 +533,7 @@ body {
 .footer-social {
   display: flex;
   flex-wrap: wrap;
+  width: 190px;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -1227,7 +1242,8 @@ body {
 .range-input {
   display: block;
   width: 143px;
-  padding: 12px 20px;
+  height: 100%;
+  padding: 12px 41px 12px 20px;
   font-family: "PT Sans";
   text-align: start;
   border: none;
@@ -1390,7 +1406,7 @@ body {
 }
 
 .select-control {
-  width: 100%;
+  width: 292px;
   padding: 14px 131px 14px 20px;
   color: #333;
   font-family: "PT Sans";
@@ -1421,14 +1437,21 @@ body {
 
 .sorting-display-list {
   display: flex;
+  justify-content: flex-end;
+  width: 220px;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style-type: none;
   margin-left: 70px;
 }
 
-.sorting-display-item:not(:last-child) {
-  margin-right: 8px;
+.sorting-display-item:not(:first-child) {
+  margin-left: 8px;
+}
+
+.sorting-display-item {
+  margin-bottom: 8px;
 }
 
 .sorting-display-link {
