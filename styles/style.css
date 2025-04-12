@@ -345,7 +345,8 @@ body {
 }
 
 .advantages-availability {
-  padding: 78px 85px;
+  width: 400px;
+  padding: 78px 85px 78px;
 }
 
 .advantages-availability:nth-child(2n+1) {
@@ -800,13 +801,48 @@ body {
 
 .field-number {
   display: flex;
-  flex-direction: row;
+}
+
+.field-number-container {
+  position: relative;
+  display: flex;
+  width: 40px;
+  height: 48px;
+  background-color: #F2F2F2;;
+}
+
+.container-minus {
+  border-radius: 4px 0 0 4px;
+}
+
+.container-minus:hover .number-button-icon path {
+  fill: #000000;
+  fill-opacity: 1;
+}
+
+.container-minus:active .number-button {
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
+}
+
+.container-plus {
+  border-radius: 0 4px 4px 0;
+}
+
+.container-plus:hover .number-button-icon path {
+  fill: #000000;
+  fill-opacity: 1;
+}
+
+.container-plus:active .number-button {
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
 }
 
 .number-input {
-  grid-column: 3 / 4;
-  padding: 14px 10px;
   width: 31px;
+  padding: 0;
+  margin: 0 auto;
   border: none;
   border-radius: 0;
   color:  #000;
@@ -817,6 +853,10 @@ body {
   font-weight: 700;
   line-height: 20px;
   appearance: textfield;
+}
+
+.number-input:hover {
+  background-color: #e6e6e6;
 }
 
 .number-input:focus {
@@ -831,108 +871,32 @@ body {
 }
 
 .number-button {
-  position: relative;
-  width: 40px;
-  height: 48px;
+  width: 20px;
+  height: 20px;
   border: none;
   padding: 0;
-  background-color: #F2F2F2;
+  background-color: transparent;
 }
 
 .number-button:focus {
-  outline: none;
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
 }
 
 .number-button-minus {
-  border-radius: 4px 0 0 4px;
-}
-
-.box-icon-minus {
   position: absolute;
   top: calc(50% - 10px);
   left: 10px;
-  width: 20px;
-  height: 20px;
-  background-position: 50%;
-}
-
-.box-icon-minus:focus {
-  outline: 2px solid #68a2ca;
-}
-
-.box-icon-minus::before {
-  content: '';
-  position: absolute;
-  top: calc(50% - 1px);
-  left: 3px;
-  height: 2px;
-  width: 14px;
-  background-image: url("../images/svg/modal_minus_black.svg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  opacity: 0.1;
-}
-
-.number-button:hover .box-icon-minus:before {
-  opacity: 1;
-}
-
-.box-icon-minus:focus {
-  outline: 2px solid #68a2ca;
-  border-radius: 2px;
-  opacity: 1;
-}
-
-.box-icon-minus:focus::before {
-  opacity: 1;
-}
-
-.number-button:active .box-icon-minus::before {
-  opacity: 0.1;
 }
 
 .number-button-plus {
-  border-radius: 0 4px 4px 0;
-}
-
-.box-icon-plus {
   position: absolute;
   top: calc(50% - 10px);
-  left: 10px;
-  width: 20px;
-  height: 20px;
-  background-position: 50%;
+  right: 10px;
 }
 
-.box-icon-plus::before {
-  content: '';
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  height: 14px;
-  width: 14px;
-  background-image: url("../images/svg//modal_plus_black.svg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  opacity: 0.1;
-}
-
-.number-button:hover .box-icon-plus::before {
-  opacity: 1;
-}
-
-.box-icon-plus:focus {
-  outline: 2px solid #68a2ca;
-  border-radius: 2px;
-  opacity: 1;
-}
-
-.box-icon-plus:focus::before {
-  opacity: 1;
-}
-
-.number-button:active .box-icon-plus::before {
-  opacity: 0.1;
+.number-button-icon {
+  margin: auto;
 }
 
 .field-info {
@@ -1435,10 +1399,11 @@ body {
   line-height: 21px;
   border: none;
   border-radius: 4px;
+  background-color: transparent;
   outline: 2px solid #E5E5E5;
   background-image: url("../images/svg/selecte_down_arrow.svg");
   background-repeat: no-repeat;
-  background-position: right 16px center;
+  background-position: right 20px center;
   appearance: none;
 }
 
@@ -1733,6 +1698,7 @@ body {
 }
 
 .pagination-link-all {
+  color: #000;
   background-color: transparent;
   outline: none;
 }
@@ -1756,10 +1722,6 @@ body {
 }
 
 .pagination-link-active {
-  color: #000;
-}
-
-.pagination-link-all {
   color: #000;
 }
 

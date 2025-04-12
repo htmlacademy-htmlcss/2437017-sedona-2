@@ -130,7 +130,7 @@
                     <path d="M59.4317 47.2H56.4197V51.1H59.4317V47.2Z" fill="#83B3D3"/>
                 </svg>
                 <h3 class="advantages-title">Жильё</h3>
-                <p class="advantages-text">Рекомендуем пожить в настоящем мотеле,<br>всё как в кино!</p>
+                <p class="advantages-text">Рекомендуем пожить<br> в настоящем мотеле,<br>всё как в кино!</p>
               </div>
               <div class="advantages-container-wrap advantages-availability">
                 <svg xmlns="http://www.w3.org/2000/svg" width="76" height="72" viewBox="0 0 76 72" fill="none">
@@ -255,19 +255,28 @@
 
               <label class="modal-label modal-label-adults" for="adults">Взрослые:</label>
               <div class="field-number number">
-                <button class="number-button number-button-minus" type="button">
-                  <span class="visually-hidden">Уменьшить количество</span>
-                  <span class="box-icon-minus" tabindex="0"></span>
-                </button>
+
+                <div class="field-number-container container-minus">
+                  <button class="number-button number-button-minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество</span>
+                    <svg class="number-button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="none">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
+                  </button>
+                </div>
 
                 <input class="number-input field-input" type="number" name="adults-amount" id="adults" placeholder="0" value="2" min="1" step="1">
 
-                <button class="number-button number-button-plus" type="button">
-                  <span class="visually-hidden">Увеличить количество</span>
-                  <span class="box-icon-plus" tabindex="0"></span>
-                </button>
-              </div>
+                <div class="field-number-container container-plus">
+                  <button class="number-button number-button-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество</span>
+                    <svg class="number-button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
+                  </button>
+                </div>
 
+              </div>
             </div>
 
             <div class="container-input-children modal-field-quantity">
@@ -281,17 +290,27 @@
               </span>
 
               <div class="field-number number">
-                <button class="number-button number-button-minus" type="button">
-                  <span class="visually-hidden">Уменьшить количество</span>
-                  <span class="box-icon-minus" tabindex="0"></span>
-                </button>
+
+                <div class="field-number-container container-minus">
+                  <button class="number-button number-button-minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество</span>
+                    <svg class="number-button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="none">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
+                  </button>
+                </div>
 
                 <input class="number-input field-input" type="number" name="children-amount" id="children" placeholder="0" value="2" min="1" step="1">
 
-                <button class="number-button number-button-plus" type="button">
-                  <span class="visually-hidden">Увеличить количество</span>
-                  <span class="box-icon-plus" tabindex="0"></span>
-                </button>
+                <div class="field-number-container container-plus">
+                  <button class="number-button number-button-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество</span>
+                    <svg class="number-button-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
+                  </button>
+                </div>
+
               </div>
             </div>
 
