@@ -250,7 +250,10 @@ body {
 .greeting-images {
   position: relative;
   background-color: #a5b5c0;
-  background-image: url("../images/jpg/greeting_background.jpg");
+  background-size: 100%, cover;
+  background-position: bottom, center;
+  background-image: url("../images/svg/greeting_divider.svg"),
+                    url("../images/jpg/greeting_background.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -375,8 +378,7 @@ body {
 }
 
 .advantages-item:not(:nth-child(1)) .advantages-title {
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin: 30px 0 28px;
 }
 
 .advantages-image {
@@ -386,7 +388,7 @@ body {
 
 .advantages-text {
   color: #333333;
-  font-size: 18px;
+  font-size: 17.8px;
   line-height: 21px;
   text-align: center;
   margin: 0;
@@ -426,7 +428,7 @@ body {
 /*SECTION SEARCH*/
 .search {
   margin: auto;
-  padding: 96px 304px 95px;
+  padding: 96px 304px 97px;
   text-align: center;
 }
 
