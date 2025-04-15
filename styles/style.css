@@ -255,7 +255,6 @@ body {
   background-image: url("../images/svg/greeting_divider.svg"),
                     url("../images/jpg/greeting_background.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .greeting-image-welcome {
@@ -378,7 +377,7 @@ body {
 }
 
 .advantages-item:not(:nth-child(1)) .advantages-title {
-  margin: 30px 0 28px;
+  margin: 28px 0 30px;
 }
 
 .advantages-image {
