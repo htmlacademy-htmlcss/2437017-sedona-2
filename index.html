@@ -237,14 +237,14 @@
 
             <div class="container-inner-date modal-field-date">
               <label class="modal-label modal-label-access" for="access">Дата заезда:</label>
-              <input class="modal-field-input" id="access" type="text" name="date-access" placeholder="Укажите дату" value="27 апреля 2020">
+              <input class="modal-field-input" id="access" type="text" name="date-access" placeholder="Укажите дату" value="27 апреля 2020" required>
               <span class="field-message field-message-error">Мы не можем отправить вас в прошлое.</span>
             </div>
 
             <div class="container-inner-date modal-field-date">
 
               <label class="modal-label modal-label-egress" for="egress">Дата выезда:</label>
-              <input class="modal-field-input" id="egress" type="text" name="date-egress" placeholder="Укажите дату" value="1 сентября 2021">
+              <input class="modal-field-input" id="egress" type="text" name="date-egress" placeholder="Укажите дату" value="1 сентября 2021" required>
               <span class="field-message">На эти даты есть свободные номера. Пока есть.</span>
             </div>
 
@@ -262,7 +262,7 @@
                   </button>
                 </div>
 
-                <input class="number-input field-input" type="number" name="adults-amount" id="adults" placeholder="0" value="2" min="1" step="1">
+                <input class="number-input field-input" type="number" name="adults-amount" id="adults" placeholder="0" value="2" min="1" step="1" required>
 
                 <div class="field-number-container container-plus">
                   <button class="number-button number-button-plus" type="button">
@@ -297,7 +297,7 @@
                   </button>
                 </div>
 
-                <input class="number-input field-input" type="number" name="children-amount" id="children" placeholder="0" value="2" min="1" step="1">
+                <input class="number-input field-input" type="number" name="children-amount" id="children" placeholder="0" value="2" min="1" step="1" required>
 
                 <div class="field-number-container container-plus">
                   <button class="number-button number-button-plus" type="button">
